@@ -44,6 +44,7 @@ export default function App() {
     setStatus("Loading");
     try {
       const response = await fetch(`http://hn.algolia.com/api/v1/search?query=${search}&hitsPerPage=70`);
+      // for more info about the API (https://hn.algolia.com/api)
 
 
       console.log("Data:", response);
